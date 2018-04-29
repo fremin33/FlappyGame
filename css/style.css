@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "flappy-font";
+    src: url('../font/Flappy-Bird.ttf');
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'flappy-font';
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 45px;
+}
+
+#game {
+    width: 856px;
+    height: 624px;
+    position: absolute;
+}
+
+.base {
+    margin-top: -4px;
+}
+
+.flappy-game {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.message {
+    width: 45%;
+}
+
+.arrow {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.up, .down {
+    text-align: center;
+}
+
+.bird {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    animation: fly 8s ease-out;
+}
+
+.play {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    z-index: 100;
+}
+
+.play:hover {
+    width: 150px;
+}
+
+@keyframes fly {
+    0% {
+        left: -120%;
+        top: 0%;
+    }
+    25% {
+        left: 50%;
+        top: 50%;
+    }
+    50% {
+        left: 220%;
+        top: 0%;
+    }
+    75% {
+        top: -120%;
+        left: 50%;
+    }
+}
