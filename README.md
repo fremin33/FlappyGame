@@ -17,6 +17,12 @@ Deux touches sont disponibles pour les utilisateurs :
 
 
 
+- Celui-ci est disponible à l'url suivante : 
+
+  http://lpcm2016.univ-lr.fr/ffremin/FlappyGame
+
+
+
 # Les sources
 
 - Les images de décor ainsi que les sprites proviennent du dépot Github 
